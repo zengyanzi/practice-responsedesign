@@ -1,0 +1,182 @@
+body {
+  font: 1em/150% Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-left: 20px;
+}
+a {
+  color: #4c6ad7;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul ,li{
+  margin: 0px;
+  padding: 0px;
+}
+li{list-style:none}
+
+li{background:url("../img/dot.png") no-repeat}
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+
+#logo {
+  width: 500px;
+  float: left;
+}
+#sidebar {
+  margin-top: 5%;
+  width: 600px;
+  float: left;
+}
+#sidebar p{
+  text-align: left;
+
+}
+.logoimage{
+  margin-top: 30%;
+  width: 60%;
+  height: 60%;
+}
+.formcontent img{
+  margin-left: 40%;
+}
+.submitbtn{
+  clear: both;
+  margin-top: 30px;
+  float: left;
+  width: 600px;
+}
+.notes li{
+  float: left;
+  width: 40%;
+  padding-left: 20px;
+}
+
+.started{
+  width: 30%;
+  float: left;
+}
+.policy{
+  width:35%;
+  float: left;
+  margin-left: 20px;
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************
+
+/** iPad **/
+@media screen and (max-width: 768px) {
+  #logo {
+    width: auto;
+    float: none;
+  }
+  .logoimage{
+    margin-top: 10%;
+  }
+  #sidebar {
+    width: auto;
+    float: none;
+    margin-left: 120px;
+  }
+
+  .submitbtn{
+    width: auto;
+    float: none;
+  }
+}
+/** iPhone **/
+@media screen and (max-width: 414px){
+
+  #logo {
+    width: auto;
+    float: none;
+  }
+  .logoimage{
+    margin-top: 10%;
+  }
+  #sidebar {
+    width: auto;
+    float: none;
+    margin-left: 20px;
+  }
+  .formcontent img{
+    margin-bottom: -2%;
+    margin-left: 25%;
+  }
+  .notes li{
+    float: none;
+    width: 40%;
+    padding-left: 20px;
+  }
+  .submitbtn{
+    width: auto;
+    float: none;
+  }
+  .started{
+    float: none;
+    width:80%;
+  }
+  .policy{
+    float: none;
+    width: 50%;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+#header, #logo, #sidebar {
+  margin-bottom: 5px;
+}
+
+#sidebar .intro{
+  font-size: 24px;
+  color: #484848;
+}
+#sidebar .infor{
+  font-size: 14px;
+  color: #6c6c6c;
+  line-height: 14px;
+}
+.loginform{
+  text-align: left;
+}
+
+.formcontent label {
+  color:#5e5e5e;
+}
+.formcontent input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 70%;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.notes{
+  font-size: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.started{
+  
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  background: #d3eef6;
+  border: #d3eef6;
+}
+.policy{
+
+  color: #6c6c6c;
+  font-size: 12px;
+  margin-top:0;
+}
+
+

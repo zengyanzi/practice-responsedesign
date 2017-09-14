@@ -1,0 +1,153 @@
+body {
+  font: 1em/150% Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-left: 20px;
+}
+a {
+  color: #4c6ad7;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+ul ,li {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+  background: url("../img/dot.png") no-repeat;
+}
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#logo {
+  width: 500px;
+  float: left;
+}
+#sidebar {
+  margin-top: 5%;
+  width: 600px;
+  float: left;
+  width: auto;
+  float: none;
+  margin-left: 120px;
+  width: auto;
+  float: none;
+  margin-left: 20px;
+  p {
+    text-align: left;
+  }
+  .intro {
+    font-size: 24px;
+    color: #484848;
+  }
+  .infor {
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 14px;
+  }
+}
+.logoimage {
+  margin-top: 30%;
+  width: 60%;
+  height: 60%;
+  margin-top: 10%;
+  margin-top: 10%;
+}
+.formcontent {
+  img {
+    margin-left: 40%;
+    margin-bottom: -2%;
+    margin-left: 25%;
+  }
+  label {
+    color: #5e5e5e;
+  }
+  input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 70%;
+    height: 30px;
+    border: 1px solid #ccc;
+  }
+}
+.submitbtn {
+  clear: both;
+  margin-top: 30px;
+  float: left;
+  width: 600px;
+  width: auto;
+  float: none;
+  width: auto;
+  float: none;
+}
+.notes {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 10px;
+  li {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+    float: none;
+    width: 40%;
+    padding-left: 20px;
+  }
+}
+.started {
+  width: 30%;
+  float: left;
+  float: none;
+  width: 80%;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  background: #d3eef6;
+  border: #d3eef6;
+}
+.policy {
+  width: 35%;
+  float: left;
+  margin-left: 20px;
+  float: none;
+  width: 50%;
+  margin-left: 0;
+  color: #6c6c6c;
+  font-size: 12px;
+  margin-top: 0;
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************
+/** iPad **/
+@media {
+  screen {
+    and {
+      (max-width {
+        &: {
+          768px) {
+            #logo {
+		width: auto;
+            float: none;
+          }
+          414px) {
+            #logo {
+		width: auto;
+            float: none;
+          }
+        }
+      }
+    }
+  }
+}
+} {
+  /** iPhone **/
+}
+}
+#header, #logo, #sidebar {
+  margin-bottom: 5px;
+}
+.loginform {
+  text-align: left;
+}

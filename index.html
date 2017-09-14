@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/validate.js"></script>
+<title>Login</title>
+
+</head>
+<body>
+	<div id="pagewrap">
+		<header id="logo">
+			<img class="logoimage"src="img/logo.png">
+		</header>
+		<main id="sidebar">
+			<p class="intro">Get started with free an account</p>
+			<p class="infor">Create a free account to interact with customers,contributors,and fans.</p>
+			<p class="infor">Already have an account? <a href="">Log in here</a></p>
+			<form enctype='application/json'  name="myForm" class="loginform"  action=".\api\signup.php" method="POST" >
+				<div class="formcontent">
+					<label>Email</label><br>
+					<input type="text" name="Email" required>				
+				</div>
+				<div class="formcontent">
+					<label>Username</label><br>
+					<input type="text" name="Username" required> 					
+				</div>
+				<div class="formcontent">
+					<label>Password</label>
+					<img id="psdimg" src="img/show.png" onclick="return showpsw();"><br>
+					<input  id="psd" type="password" name="Password" oninput="OnInput(event)" onpropertychange="OnPropChanged (event)" required>
+				</div>
+				<div>
+					<ul class="notes">
+						<li id="lowercase">One lowercase character</li>
+						<li id="uppercase">One uppercase character</li>
+						<li id="number">One number</li>
+						<li id="special">One special character</li>
+						<li id="minimum">8 characters minimum</li>
+					</ul>						
+				</div>
+				<div class="submitbtn">
+					<input  class="started" type="submit" value="Get Started!">	
+					<p class="policy">By clicking this button,you agree to <a href="">Policy & terms of Use</a></p>		
+				</div>			
+			</form>
+		</main>				
+	</div>	
+</body>
+</html>
